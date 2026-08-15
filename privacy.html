@@ -43,10 +43,11 @@
       <h3>Identity verification (KYC) documents</h3>
       <ul>
         <li>PAN card image</li>
-        <li>Aadhaar card image (or an alternative government-issued ID)</li>
+        <li>A <strong>masked</strong> Aadhaar image with the first 8 digits hidden, or an alternative government-issued ID</li>
         <li>A selfie/photo used only to match your identity</li>
       </ul>
       <p>KYC documents are collected solely for identity verification, fraud prevention and platform safety, and to meet our partners' regulatory requirements.</p>
+      <p>In line with UIDAI guidance, we do not collect or store your full 12-digit Aadhaar number or an unmasked Aadhaar image. Only the last 4 digits are recorded, together with a one-way cryptographic hash of the number used to detect duplicate accounts — the original number cannot be recovered from this hash.</p>
       <h3>Location, including background location</h3>
       <p>When a worker is travelling to an assigned, escrow-funded job and chooses to share their location, WorkMart may collect precise location even while the app is closed or the screen is off, <strong>only if</strong> the worker grants "Allow all the time" access. This is used solely to show the provider the worker's live position and estimated arrival for that specific job. It stops the moment the worker taps "Stop sharing" or the job completes, and the live location trail is deleted when sharing ends. We also use location at the moment a worker marks a job complete to confirm they were at the job site.</p>
       <h3>Usage information</h3>
@@ -77,7 +78,7 @@
       <ul>
         <li><strong>Encryption in transit</strong> — all data is transmitted over TLS.</li>
         <li><strong>Access-controlled storage</strong> — documents are held in private cloud storage protected by row-level-security policies; only authorised admin staff can access KYC documents, and only for verification.</li>
-        <li><strong>Aadhaar protection</strong> — Aadhaar numbers are never shown publicly.</li>
+        <li><strong>Aadhaar protection</strong> — we never collect your full Aadhaar number or an unmasked Aadhaar image. Only the last 4 digits and a masked image are stored, alongside a one-way hash of the number that cannot be reversed to recover it.</li>
         <li><strong>Credentials</strong> — passwords are hashed; session tokens are held in the device's secure storage.</li>
       </ul>
 
