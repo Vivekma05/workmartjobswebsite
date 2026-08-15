@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Delete Your Account & Data — WorkMart</title>
-  <meta name="description" content="How to delete your WorkMart account and what happens to your data — in the app, or by request if you no longer have it installed." />
+  <title>Delete Your Account — WorkMart</title>
+  <meta name="description" content="How to delete your WorkMart account and request deletion of your associated data." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
@@ -25,58 +25,84 @@
 
   <div class="legal">
     <div class="wrap">
-      <h1>Delete Your Account &amp; Data</h1>
-      <p class="updated">Last updated: 30 July 2026</p>
+      <h1>Delete Your Account</h1>
+      <p class="updated">Last updated: 15 August 2026</p>
 
       <div class="intro">
-        You can permanently delete your WorkMart account and personal data at any time, directly from the app. This page explains how, what gets deleted, what we're required to keep, and how to request deletion if you no longer have the app installed.
+        WorkMart allows you to delete your account and request deletion of your associated personal data at any time. This page explains how to do it and what happens to your data afterwards.
       </div>
 
-      <h2>1. Delete in the app (self-serve, immediate)</h2>
+      <h2>How to delete your account (in the app)</h2>
       <ol>
-        <li>Open WorkMart and sign in.</li>
-        <li>Go to <strong>Profile → Settings → Delete Account</strong>.</li>
-        <li>Confirm. Your account is deleted right away — no waiting period, no support ticket needed.</li>
+        <li>Open the <strong>WorkMart</strong> app on your device.</li>
+        <li>Tap the <strong>Profile</strong> tab (bottom-right).</li>
+        <li>Tap <strong>Settings</strong> (gear icon, top-right).</li>
+        <li>Scroll down to the <strong>Account</strong> section.</li>
+        <li>Tap <strong>Data &amp; Privacy</strong>.</li>
+        <li>Scroll to the bottom and tap <strong>Delete my account</strong>.</li>
+        <li>Confirm the deletion when prompted.</li>
       </ol>
-      <p>If you have money currently held in escrow — a job you posted that's funded, or a job you're actively working on — you'll be asked to finish, cancel, or resolve it first. This protects the other party in that job from having money stranded mid-transaction; it's the only thing that blocks deletion.</p>
+      <p>Your account will be deactivated immediately. Personal identifiers are anonymized within 30 days.</p>
 
-      <h2>2. What gets deleted</h2>
-      <p>Regardless of your account's history, the following are removed immediately and irreversibly:</p>
+      <h2>Can't access the app? Request deletion by email</h2>
+      <p>If you are unable to sign in or access the app, you can request account deletion by emailing us:</p>
       <ul>
-        <li>Your KYC documents and verification images</li>
-        <li>Your saved jobs, favourited workers, and push-notification tokens</li>
-        <li>Your notification history</li>
-        <li>Uploaded files — profile photo, KYC images, job/completion photos you submitted</li>
-        <li>The text of messages you sent (the content is replaced with "[deleted]"; the conversation itself isn't wiped from the other participant's history, so their side of a chat isn't corrupted by your deletion)</li>
+        <li><strong>Email:</strong> <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a></li>
+        <li><strong>Subject line:</strong> Account Deletion Request</li>
+        <li><strong>Include:</strong> Your registered email address and/or phone number so we can verify your identity.</li>
+      </ul>
+      <p>We will verify your identity and process the deletion within 30 days. You will receive a confirmation email once deletion is complete.</p>
+
+      <h2>What gets deleted immediately</h2>
+      <ul>
+        <li>Your public profile (name, photo, bio)</li>
+        <li>Push notification tokens</li>
+        <li>Saved jobs and preferences</li>
+        <li>Active session data</li>
+        <li>Active jobs are cancelled (with escrow refunds if applicable)</li>
       </ul>
 
-      <h2>3. What we're required to keep, and why</h2>
-      <p>If your account has <strong>no</strong> financial history (no jobs posted, no payments, no payouts), it is deleted completely and permanently — nothing about you remains.</p>
-      <p>If your account <strong>does</strong> have financial history — you posted a job, made a payment, or received a payout — Indian tax and financial record-keeping rules require the underlying transaction ledger to be retained. In that case, we:</p>
-      <ul>
-        <li>Replace your name with "Deleted user" and permanently erase your email, phone number, avatar, bio, skills, and saved location from our systems;</li>
-        <li>Disable the account entirely so it can never be signed into or recovered;</li>
-        <li>Keep only the anonymised transaction records themselves (job/payment/payout amounts and dates, with no name, contact detail, or profile attached to them) — the same way a bank statement keeps a transaction after you close an account.</li>
-      </ul>
-      <p>No one at WorkMart can use these anonymised records to identify you afterward.</p>
+      <h2>What is retained for legal compliance</h2>
+      <p>Indian law (IT Act 2000, Prevention of Money Laundering Act, Income Tax Act) requires us to retain certain records even after account deletion:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Retention period after deletion</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KYC documents (PAN, Aadhaar, DL)</td>
+            <td>5 years</td>
+            <td>Regulatory compliance (IT Act, PMLA)</td>
+          </tr>
+          <tr>
+            <td>Payment &amp; transaction records</td>
+            <td>7 years</td>
+            <td>Tax compliance, audit requirements</td>
+          </tr>
+          <tr>
+            <td>Anonymized job completion records</td>
+            <td>3 years</td>
+            <td>Dispute evidence</td>
+          </tr>
+          <tr>
+            <td>Chat messages</td>
+            <td>1 year</td>
+            <td>Dispute resolution, safety</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>All retained data is stored with AES-256 encryption and access controls. After the retention period expires, data is permanently and securely deleted.</p>
 
-      <h2>4. No app installed? Request deletion by email</h2>
-      <p>If you'd rather not reinstall the app, email <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a> from the address on your account (or include your registered phone number) with the subject "Delete my account." We'll verify it's really you and complete the same deletion described above, and confirm once it's done.</p>
+      <h2>Data export</h2>
+      <p>Before deleting your account, you may request a copy of your data by emailing <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a> with the subject "Data Export Request". Your export will be prepared within 30 days.</p>
 
-      <div class="callout">
-        <strong>In short:</strong> delete anytime from Settings in the app — it's instant. If you have no financial history, everything about you is erased. If you do, we anonymise your personal details but keep the transaction ledger itself, as Indian financial record-keeping rules require. No app? Email us and we'll do it for you.
-      </div>
+      <h2>Questions?</h2>
+      <p>If you have any questions about account deletion or data handling, contact us at <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a>. You can also review our full <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
     </div>
   </div>
-
-  <footer>
-    <div class="wrap">
-      <div class="col"><div class="brand"><img class="emblem" src="assets/workmart-emblem.png" alt="" /><img class="wordmark" src="assets/workmart-wordmark.png" alt="WorkMart" /></div><p style="max-width:280px; margin-top:12px; font-size:14px;">Escrow-protected local services marketplace for India.</p></div>
-      <div class="col"><h4>Product</h4><a href="index.html#how">How it works</a><a href="pricing.html">Pricing &amp; fees</a></div>
-      <div class="col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="refunds.html">Refund &amp; Cancellation</a><a href="delete-account.html">Delete Account &amp; Data</a></div>
-      <div class="col"><h4>Contact</h4><a href="contact.html">Contact us</a><a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a></div>
-    </div>
-    <div class="wrap"><div class="legalline">© 2026 WorkMart. All rights reserved.</div></div>
-  </footer>
 </body>
 </html>
