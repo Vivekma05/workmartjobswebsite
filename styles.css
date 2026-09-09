@@ -347,16 +347,40 @@ p.section-lead {
    of leaving the text stranded in a middle strip. Applied by site.js, which
    also wraps the content column — no per-page markup needed. */
 .legal .wrap.has-toc {
-  max-width: 1180px;
+  max-width: 1280px;
   display: grid;
-  grid-template-columns: 232px minmax(0, 1fr);
-  gap: 48px;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 52px;
   align-items: start;
 }
+/* Full-bleed tinted backdrop + floating content sheet: on wide screens the
+   margins read as background, not emptiness. */
+.legal:has(.has-toc) {
+  background:
+    radial-gradient(900px 300px at 50% -80px, color-mix(in srgb, var(--blue) 7%, transparent), transparent 70%),
+    var(--soft);
+}
+.docs-body {
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 36px 40px;
+  box-shadow: 0 12px 40px rgba(11,19,43,0.06);
+}
+.docs-body > h1:first-child { margin-top: 0; }
 .toc {
   position: sticky; top: 88px;
   max-height: calc(100vh - 130px); overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+  padding: 16px 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
 }
+.toc::-webkit-scrollbar { width: 5px; }
+.toc::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
 .toc-title {
   font-size: 11px; font-weight: 800; letter-spacing: 1.2px;
   text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
