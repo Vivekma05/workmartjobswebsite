@@ -88,7 +88,7 @@ header.nav {
   border-bottom: 1px solid var(--line);
 }
 .nav-inner {
-  max-width: var(--wrap); margin: 0 auto; padding: 12px 20px;
+  max-width: none; margin: 0; padding: 12px 28px;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 
