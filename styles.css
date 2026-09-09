@@ -39,7 +39,7 @@
   --r-sm: 8px;
   --r-md: 12px;
   --r-lg: 16px;
-  --wrap: 1040px;
+  --wrap: 1180px;
 }
 
 /* The app is theme-aware, so the site should not blaze white at a user who
@@ -293,7 +293,7 @@ p.section-lead {
    of leaving the text stranded in a middle strip. Applied by site.js, which
    also wraps the content column — no per-page markup needed. */
 .legal .wrap.has-toc {
-  max-width: 1080px;
+  max-width: 1180px;
   display: grid;
   grid-template-columns: 232px minmax(0, 1fr);
   gap: 48px;
