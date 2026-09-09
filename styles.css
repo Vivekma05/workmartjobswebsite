@@ -126,6 +126,9 @@ header.nav {
   display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px;
   align-items: center; text-align: left;
 }
+/* Hero is a visual band, not a document — it earns a wider measure than
+   text sections so the copy and the phone spread across the screen. */
+.hero .hero-grid { max-width: 1560px; }
 .hero-copy { text-align: left; }
 .hero h1 {
   font-size: 48px; line-height: 1.1; letter-spacing: -1.5px;
