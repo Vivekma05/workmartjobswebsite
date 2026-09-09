@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vivekma05.github.io/workmartjobswebsite/sitemap.xml
