@@ -7,6 +7,9 @@
   <meta name="description" content="WorkMart is an escrow-protected marketplace that connects customers with skilled, identity-verified local service professionals across India — cleaning, painting, house shifting, plumbing, repairs and more. Pay into secure escrow; funds release only when the service is complete." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="nav">
@@ -26,14 +29,35 @@
 
   <!-- Hero -->
   <div class="hero">
-    <div class="wrap">
-      <span class="badge-pill">🔒 Escrow-protected payments</span>
-      <span class="badge-pill">🎉 Zero platform fee — limited period</span>
-      <h1>Trusted local services,<br />paid safely through escrow.</h1>
-      <p class="sub">WorkMart is a local <strong>services marketplace</strong>. It connects you with skilled, identity-verified professionals for everyday tasks — cleaning, painting, house shifting, plumbing, deliveries and more. You pay for the service into secure escrow, and the money is released to the professional only when the work is complete.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1qO738HMnzx20lGZyDd1x32ig0TzO4p0c">Download the app</a>
-        <a class="btn btn-ghost" href="#how">See how it works</a>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="badge-pill">🔒 Escrow-protected payments</span>
+        <span class="badge-pill hot">🎉 Zero platform fee — limited period</span>
+        <h1>Trusted local services,<br />paid safely through escrow.</h1>
+        <p class="sub">WorkMart is a local <strong>services marketplace</strong>. It connects you with skilled, identity-verified professionals for everyday tasks — cleaning, painting, house shifting, plumbing, deliveries and more. You pay for the service into secure escrow, and the money is released to the professional only when the work is complete.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1qO738HMnzx20lGZyDd1x32ig0TzO4p0c">Download the app</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+      <div class="mock-float" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="mock-bar">
+              <div class="mock-dot"></div>
+              <div><div class="mock-line" style="width:92px"></div><div class="mock-line" style="width:58px;margin-top:5px"></div></div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-row"><span class="mock-title">Deep home cleaning</span><span class="mock-price">₹500</span></div>
+              <div class="mock-sub">Indiranagar, Bengaluru · Today</div>
+              <span class="mock-escrow">✓ ₹500 held in escrow</span>
+              <div class="mock-btn">Confirm &amp; release payment</div>
+            </div>
+            <div class="mock-tip">💝<div>Tip sent<small>Ramesh received ₹50 · Thank you!</small></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -41,6 +65,7 @@
   <!-- What WorkMart is -->
   <section>
     <div class="wrap">
+      <span class="eyebrow">The idea</span>
       <h2 class="section-title">A marketplace for everyday services</h2>
       <p class="section-lead">Think of WorkMart like booking a cleaner, painter or mover: a customer hires a nearby professional for a specific task and pays for the completed service, with the money protected in escrow the whole way through. WorkMart simply connects the two and safeguards the payment — and <strong>right now the platform fee is ₹0</strong>, so customers pay only the service budget.</p>
     </div>
@@ -49,15 +74,16 @@
   <!-- Trust features -->
   <section class="alt">
     <div class="wrap">
+      <span class="eyebrow">Why WorkMart</span>
       <h2 class="section-title">Built on trust</h2>
       <p class="section-lead">Every part of WorkMart is designed to make booking and delivering a service feel safe for both sides.</p>
       <div class="grid grid-4">
-        <div class="card"><div class="ico">🔒</div><h3>Escrow payments</h3><p>Customers pay for the service into secure escrow up front. The professional sees the payment is real; it is released only when the customer confirms the work is done.</p></div>
-        <div class="card"><div class="ico">🪪</div><h3>Verified identities</h3><p>Customers and professionals complete KYC verification, so you always know who you are dealing with.</p></div>
-        <div class="card"><div class="ico">🔢</div><h3>Start &amp; end codes</h3><p>A start code and a completion code confirm the professional was really there and the service was really finished.</p></div>
-        <div class="card"><div class="ico">⭐</div><h3>Ratings &amp; trust score</h3><p>Reviews and a live trust score help the best professionals and fairest customers rise to the top.</p></div>
-        <div class="card"><div class="ico">🏅</div><h3>Pro tiers &amp; past work</h3><p>Experienced professionals earn Gold, Silver and Bronze tiers, and showcase photos of finished work right on their applications.</p></div>
-        <div class="card"><div class="ico">💝</div><h3>Tips for great work</h3><p>Happy with the service? Send the professional a tip after payout — 100% of it reaches them.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9.3 12l2 2 3.4-3.8"/></svg></div><h3>Escrow payments</h3><p>Customers pay for the service into secure escrow up front. The professional sees the payment is real; it is released only when the customer confirms the work is done.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 17c.8-1.8 2.5-2.6 4-2.6s3.2.8 4 2.6"/><path d="M15 9.5h4M15 13h4"/></svg></div><h3>Verified identities</h3><p>Customers and professionals complete KYC verification, so you always know who you are dealing with.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="3.5"/><path d="M10.7 12.3L20 3"/><path d="M15.5 7.5l2.5 2.5M18 5l2 2"/></svg></div><h3>Start &amp; end codes</h3><p>A start code and a completion code confirm the professional was really there and the service was really finished.</p></div>
+        <div class="card"><div class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8L3.5 9.7l5.9-.9L12 3.5z"/></svg></div><h3>Ratings &amp; trust score</h3><p>Reviews and a live trust score help the best professionals and fairest customers rise to the top.</p></div>
+        <div class="card"><div class="ico gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="4"/><path d="M9.2 12.2L7 21l5-2.6L17 21l-2.2-8.8"/></svg></div><h3>Pro tiers &amp; past work</h3><p>Experienced professionals earn Gold, Silver and Bronze tiers, and showcase photos of finished work right on their applications.</p></div>
+        <div class="card"><div class="ico pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="4" rx="1"/><path d="M6 13v7h12v-7M12 9v11"/><path d="M12 9C8 9 6.5 7.5 6.5 5.5S9 4 9.5 5.5L12 9zM12 9c4 0 5.5-1.5 5.5-3.5S15 4 14.5 5.5L12 9z"/></svg></div><h3>Tips for great work</h3><p>Happy with the service? Send the professional a tip after payout — 100% of it reaches them.</p></div>
       </div>
     </div>
   </section>
@@ -65,6 +91,7 @@
   <!-- How it works -->
   <section id="how">
     <div class="wrap">
+      <span class="eyebrow">The process</span>
       <h2 class="section-title">How it works</h2>
       <p class="section-lead">A simple, protected flow from booking a service to completion.</p>
       <div class="grid grid-3">
@@ -90,13 +117,14 @@
   <!-- Services -->
   <section class="alt" id="services">
     <div class="wrap">
+      <span class="eyebrow">What we cover</span>
       <h2 class="section-title">Services for every need</h2>
       <p class="section-lead">Book across the everyday services people rely on most.</p>
       <div class="grid grid-4">
-        <div class="card"><div class="ico">🧹</div><h3>Cleaning</h3><p>Home, office and deep cleaning.</p></div>
-        <div class="card"><div class="ico">🚚</div><h3>House shifting</h3><p>Movers, loading and packing help.</p></div>
-        <div class="card"><div class="ico">🎨</div><h3>Painting</h3><p>Walls, rooms and touch-ups.</p></div>
-        <div class="card"><div class="ico">🔧</div><h3>Repairs &amp; more</h3><p>Plumbing, electrical, carpentry, gardening, deliveries and events.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l1.7 4.6 4.8 1.4-4.8 1.4L12 16l-1.7-4.6L5.5 10l4.8-1.4L12 4z"/><path d="M18.5 15.5l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"/></svg></div><h3>Cleaning</h3><p>Home, office and deep cleaning.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2z"/><path d="M14 10h4l4 4v2h-8"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></div><h3>House shifting</h3><p>Movers, loading and packing help.</p></div>
+        <div class="card"><div class="ico warm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="5" rx="1.5"/><path d="M18 6.5h2.5v4H12V13"/><path d="M12 13v7"/></svg></div><h3>Painting</h3><p>Walls, rooms and touch-ups.</p></div>
+        <div class="card"><div class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.8 5.2a4.2 4.2 0 0 0-5.7 5.3L4 15.6V20h4.4l5.1-5.1a4.2 4.2 0 0 0 5.3-5.7l-2.9 2.9-2.6-2.6 2.5-4.3z"/></svg></div><h3>Repairs &amp; more</h3><p>Plumbing, electrical, carpentry, gardening, deliveries and events.</p></div>
       </div>
     </div>
   </section>
@@ -104,6 +132,7 @@
   <!-- Pricing clarity (addresses "who pays") -->
   <section id="fees">
     <div class="wrap">
+      <span class="eyebrow">No surprises</span>
       <h2 class="section-title">Simple, fair pricing</h2>
       <p class="section-lead">Customers pay only for the service they book — and <strong>for a limited period, the platform fee is ₹0</strong>. Professionals join and offer their services for free and keep what they earn, plus any tips; WorkMart never charges a professional to sign up or to be matched. All payments are processed by a licensed payment gateway and held in escrow until the service is complete. See full details on our <a href="pricing.html">pricing page</a>.</p>
     </div>
