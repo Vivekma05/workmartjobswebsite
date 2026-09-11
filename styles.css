@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    WorkMart — public website styles
-   Self-contained: no external fonts, no CDNs. Works on any static host.
+   Fonts load from Google Fonts (see <link> tags); everything else is
+   self-hosted. Works on any static host.
 
    Palette is taken from the APP, not invented here:
      --navy-1/2   NAVY_GRADIENT from components/ui/AuthChrome.tsx
