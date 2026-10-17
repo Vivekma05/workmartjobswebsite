@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#001d65" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="canonical" href="https://workmartjobs.com/pricing.html" />
   <meta property="og:type" content="website" />
@@ -17,34 +18,62 @@
   <meta property="og:description" content="Zero platform fee for a limited period. Workers keep their full budget, plus optional tips." />
   <meta property="og:url" content="https://workmartjobs.com/pricing.html" />
   <meta name="twitter:card" content="summary" />
+  <script>document.documentElement.classList.add('js')</script>
   <script src="site.js" defer></script>
 </head>
 <body>
+  <!-- SITE-HEADER:START -->
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="WorkMart home"><img class="emblem" src="assets/workmart-emblem.png" alt="" /><img class="wordmark" src="assets/workmart-wordmark.png" alt="WorkMart" /></a>
-      <nav class="nav-links">
+      <a class="brand" href="index.html" aria-label="WorkMart home">
+        <img class="emblem" src="assets/img/emblem.webp" alt="" width="36" height="36" />
+        <img class="wordmark wm-silver" src="assets/img/wordmark-silver.webp" alt="WorkMart" width="192" height="23" />
+        <img class="wordmark wm-blue" src="assets/img/wordmark-blue.webp" alt="" aria-hidden="true" width="192" height="23" />
+      </a>
+      <nav class="nav-links" aria-label="Main">
         <a href="index.html#how">How it works</a>
+        <a href="index.html#trust">Why WorkMart</a>
+        <a href="index.html#services">Services</a>
         <a href="pricing.html">Pricing</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="refunds.html">Refunds</a>
+        <a href="index.html#faq">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="nav-cta">
+        <a class="btn btn-sm btn-light" href="https://play.google.com/store/apps/details?id=com.workmart.app">Get the app</a>
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg class="i"><use href="assets/icons.svg#i-menu"></use></svg></button>
+      </div>
     </div>
   </header>
+  <div class="mnav" id="mnav" hidden>
+    <a href="index.html#how">How it works</a>
+    <a href="index.html#trust">Why WorkMart</a>
+    <a href="index.html#services">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="mnav-small"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="refunds.html">Refunds</a></div>
+    <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.workmart.app"><img src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="180" height="54" /></a>
+  </div>
+  <!-- SITE-HEADER:END -->
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#ffb27d">WorkMart</p>
+      <h1>Pricing &amp; Fees</h1>
+      <p>Last updated: 9 September 2026</p>
+    </div>
+    <svg class="chevron" viewBox="0 0 100 44" preserveAspectRatio="none" aria-hidden="true"><polygon class="page" points="0,0 100,0 100,44 0,44" /><polygon class="bev" points="0,0 100,0 100,7 50,44 0,7" /><polygon class="nav-fill" points="0,0 100,0 50,37" /></svg>
+  </section>
 
   <div class="legal">
     <div class="wrap">
-      <h1>Pricing &amp; Fees</h1>
-      <p class="updated">Last updated: 9 September 2026</p>
 
       <div class="intro">
         WorkMart is free to download and free to browse. For a <strong>limited period, our platform fee is ₹0</strong> — providers pay only the job budget, and workers receive every rupee of it. When the offer ends, the standard fee below applies, always shown before you pay.
       </div>
 
       <div class="callout">
-        <strong>🎉 Launch offer: ZERO platform fee.</strong> Post and fund jobs with no added charges while the offer lasts. The app always shows the exact total before any payment is made.
+        <strong>Launch offer: ₹0 platform fee.</strong> Posting is free, and when you hire you pay only the job budget — no added charges while the offer lasts. The app always shows the exact total before any payment is made.
       </div>
 
       <h2>Platform fee</h2>
@@ -73,7 +102,7 @@
 
       <h2>Escrow &amp; when money moves</h2>
       <ul>
-        <li>The Provider pays the budget + platform fee into <strong>escrow</strong> when posting a funded job.</li>
+        <li>Posting a job is free. The Provider pays the budget + platform fee (currently ₹0) into <strong>escrow</strong> when they hire a worker.</li>
         <li>The money is <strong>held safely</strong> — not sent to the worker yet.</li>
         <li>It is <strong>released to the worker</strong> only after the Provider confirms the job is complete (using the completion code).</li>
         <li>If the job is cancelled before work is done, the Provider is refunded per our <a href="refunds.html">Refund &amp; Cancellation Policy</a>.</li>
@@ -88,14 +117,44 @@
     </div>
   </div>
 
-  <footer>
+  <!-- SITE-FOOTER:START -->
+  <footer class="site">
     <div class="wrap">
-      <div class="col"><div class="brand"><img class="emblem" src="assets/workmart-emblem.png" alt="" /><img class="wordmark" src="assets/workmart-wordmark.png" alt="WorkMart" /></div><p style="max-width:280px; margin-top:12px; font-size:14px;">Escrow-protected local services marketplace for India.</p></div>
-      <div class="col"><h4>Product</h4><a href="index.html#how">How it works</a><a href="pricing.html">Pricing &amp; fees</a></div>
-      <div class="col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="refunds.html">Refund &amp; Cancellation</a><a href="delete-account.html">Delete Account &amp; Data</a></div>
-      <div class="col"><h4>Contact</h4><a href="contact.html">Contact us</a><a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a></div>
+      <div class="foot">
+        <div>
+          <a class="brand" href="index.html" aria-label="WorkMart home">
+            <img class="emblem" src="assets/img/emblem.webp" alt="" width="36" height="36" />
+            <img class="wordmark wm-silver" src="assets/img/wordmark-silver.webp" alt="WorkMart" width="192" height="23" />
+          </a>
+          <p>The escrow-protected marketplace for local services in India.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#trust">Why WorkMart</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html">Pricing &amp; fees</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="refunds.html">Refund &amp; Cancellation</a>
+          <a href="delete-account.html">Delete Account &amp; Data</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact us</a>
+          <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a>
+          <a href="https://play.google.com/store/apps/details?id=com.workmart.app">Get the app</a>
+        </div>
+      </div>
+      <div class="legalline">
+        <p>© <span data-year>2026</span> WorkMart. All rights reserved. WorkMart is a technology platform that connects customers with independent local service professionals and facilitates escrow-protected payments between them. WorkMart is not the employer of any professional and does not itself provide the listed services.</p>
+      </div>
     </div>
-    <div class="wrap"><div class="legalline">© 2026 WorkMart. All rights reserved.</div></div>
   </footer>
+  <!-- SITE-FOOTER:END -->
 </body>
 </html>

@@ -2,247 +2,496 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WorkMart — Book trusted local services, paid safely through escrow</title>
-  <meta name="description" content="WorkMart is an escrow-protected marketplace that connects customers with skilled, identity-verified local service professionals across India — cleaning, painting, house shifting, plumbing, repairs and more. Pay into secure escrow; funds release only when the service is complete." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>WorkMart — Trusted local help, paid safely through escrow</title>
+  <meta name="description" content="Post any job for free, hire an ID-verified local professional, and pay into escrow. Your money is released only when the work is done. Cleaning, repairs, house shifting, painting and 100+ services across India." />
+  <meta name="theme-color" content="#001d65" />
+  <link rel="canonical" href="https://workmartjobs.com/" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="canonical" href="https://workmartjobs.com/index.html" />
+  <link rel="apple-touch-icon" href="assets/img/emblem.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="WorkMart" />
-  <meta property="og:title" content="WorkMart — Book trusted local services, paid safely through escrow" />
-  <meta property="og:description" content="Cleaning, painting, house shifting, plumbing and more by identity-verified local professionals. Money held in secure escrow until the work is done. Zero platform fee for a limited period." />
-  <meta property="og:url" content="https://workmartjobs.com/index.html" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="WorkMart — trusted local services, paid safely through escrow" />
-  <meta name="twitter:description" content="Identity-verified local professionals. Escrow-protected payments. Zero platform fee, limited period." />
+  <meta property="og:title" content="WorkMart — Trusted local help, paid safely through escrow" />
+  <meta property="og:description" content="Post free. Hire verified local pros. Pay into escrow — released only when the work is done." />
+  <meta property="og:url" content="https://workmartjobs.com/" />
+  <meta property="og:image" content="https://workmartjobs.com/assets/img/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://workmartjobs.com/assets/img/og-image.jpg" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"MobileApplication","name":"WorkMart","applicationCategory":"BusinessApplication","operatingSystem":"Android","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"description":"Escrow-protected marketplace for local services in India."}
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"WorkMart: Local Jobs & Work","operatingSystem":"Android","applicationCategory":"BusinessApplication","url":"https://workmartjobs.com/","installUrl":"https://play.google.com/store/apps/details?id=com.workmart.app","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"description":"Escrow-protected marketplace for local services in India."}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/screen-review-light.webp" media="(prefers-color-scheme: light)" />
+  <link rel="preload" as="image" href="assets/img/screen-review-dark.webp" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="site.js" defer></script>
 </head>
 <body>
+  <!-- SITE-HEADER:START -->
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="index.html" aria-label="WorkMart home"><img class="emblem" src="assets/workmart-emblem.png" alt="" /><img class="wordmark" src="assets/workmart-wordmark.png" alt="WorkMart" /></a>
-      <nav class="nav-links">
+      <a class="brand" href="index.html" aria-label="WorkMart home">
+        <img class="emblem" src="assets/img/emblem.webp" alt="" width="36" height="36" />
+        <img class="wordmark wm-silver" src="assets/img/wordmark-silver.webp" alt="WorkMart" width="192" height="23" />
+        <img class="wordmark wm-blue" src="assets/img/wordmark-blue.webp" alt="" aria-hidden="true" width="192" height="23" />
+      </a>
+      <nav class="nav-links" aria-label="Main">
         <a href="index.html#how">How it works</a>
+        <a href="index.html#trust">Why WorkMart</a>
         <a href="index.html#services">Services</a>
         <a href="pricing.html">Pricing</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="refunds.html">Refunds</a>
+        <a href="index.html#faq">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="nav-cta">
+        <a class="btn btn-sm btn-light" href="https://play.google.com/store/apps/details?id=com.workmart.app">Get the app</a>
+        <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg class="i"><use href="assets/icons.svg#i-menu"></use></svg></button>
+      </div>
     </div>
   </header>
+  <div class="mnav" id="mnav" hidden>
+    <a href="index.html#how">How it works</a>
+    <a href="index.html#trust">Why WorkMart</a>
+    <a href="index.html#services">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="mnav-small"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="refunds.html">Refunds</a></div>
+    <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.workmart.app"><img src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="180" height="54" /></a>
+  </div>
+  <!-- SITE-HEADER:END -->
 
-  <!-- Hero -->
-  <div class="hero">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="badge-pill">🔒 Escrow-protected payments</span>
-        <span class="badge-pill hot">🎉 Zero platform fee — limited period</span>
-        <h1>Trusted local services,<br />paid safely through escrow.</h1>
-        <p class="sub">WorkMart is a local <strong>services marketplace</strong>. It connects you with skilled, identity-verified professionals for everyday tasks — cleaning, painting, house shifting, plumbing, deliveries and more. You pay for the service into secure escrow, and the money is released to the professional only when the work is complete.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1qO738HMnzx20lGZyDd1x32ig0TzO4p0c">Download the app</a>
-          <a class="btn btn-ghost" href="#how">See how it works</a>
-        </div>
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="aurora a1"></span><span class="aurora a2"></span><span class="aurora a3"></span>
+        <span class="grid-dots"></span>
       </div>
-      <div class="mock-float" aria-hidden="true">
-        <div class="phone">
-          <div class="phone-screen">
-            <div class="mock-bar">
-              <div class="mock-dot"></div>
-              <div><div class="mock-line" style="width:92px"></div><div class="mock-line" style="width:58px;margin-top:5px"></div></div>
-            </div>
-            <div class="mock-card">
-              <div class="mock-row"><span class="mock-title">Deep home cleaning</span><span class="mock-price">₹500</span></div>
-              <div class="mock-sub">Indiranagar, Bengaluru · Today</div>
-              <span class="mock-escrow">✓ ₹500 held in escrow</span>
-              <div class="mock-btn">Confirm &amp; release payment</div>
-            </div>
-            <div class="mock-tip">💝<div>Tip sent<small>Ramesh received ₹50 · Thank you!</small></div></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="pill" data-in style="--d:0"><svg class="i"><use href="assets/icons.svg#i-shield-check"></use></svg>Escrow-protected payments<span class="pill-sep"></span><span><b>₹0 platform fee</b> for a limited time</span></p>
+          <h1 data-in style="--d:1">Trusted local help,<br /><span class="grad">paid safely through escrow.</span></h1>
+          <p class="lead" data-in style="--d:2">Post any job for free, hire an ID-verified professional near you, and pay into escrow. Your money is released only when the work is done.</p>
+          <div class="cta-row" data-in style="--d:3">
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.workmart.app"><img src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="180" height="54" /></a>
+            <a class="btn btn-glass" href="#how">See how it works <svg class="i"><use href="assets/icons.svg#i-arrow-right"></use></svg></a>
+          </div>
+          <ul class="hero-proof" data-in style="--d:4">
+            <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Free to post</li>
+            <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>KYC-verified professionals</li>
+            <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Payments via Razorpay</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-in style="--d:2" aria-hidden="true">
+          <span class="hero-glow"></span>
+          <div class="device" data-depth="1">
+            <picture>
+              <source srcset="assets/img/screen-review-dark.webp" media="(prefers-color-scheme: dark)" />
+              <img src="assets/img/screen-review-light.webp" alt="" width="300" height="667" fetchpriority="high" />
+            </picture>
+          </div>
+          <div class="float-card fc-kyc" data-depth="1.8">
+            <span class="fc-ico blue"><svg class="i"><use href="assets/icons.svg#i-badge-check"></use></svg></span>
+            <span><b>KYC verified</b><small>Identity checked</small></span>
+          </div>
+          <div class="float-card fc-escrow" data-depth="2.4">
+            <span class="fc-ico green"><svg class="i"><use href="assets/icons.svg#i-shield-check"></use></svg></span>
+            <span><b>₹800 held in escrow</b><small>Released when you confirm</small></span>
+          </div>
+          <div class="float-card fc-code" data-depth="3">
+            <span class="fc-ico orange"><svg class="i"><use href="assets/icons.svg#i-key-round"></use></svg></span>
+            <span><b>Start code</b><span class="digits"><span>4</span><span>8</span><span>2</span><span>1</span></span></span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      <svg class="chevron" viewBox="0 0 100 56" preserveAspectRatio="none" aria-hidden="true">
+        <polygon class="page" points="0,0 100,0 100,56 0,56" />
+        <polygon class="bev" points="0,0 100,0 100,8 50,56 0,8" />
+        <polygon class="nav-fill" points="0,0 100,0 50,48" />
+      </svg>
+    </section>
 
-  <!-- Trust strip -->
-  <div class="trust-strip">
-    <div class="wrap">
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9.3 12l2 2 3.4-3.8"/></svg>Escrow on every job</span>
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 17c.8-1.8 2.5-2.6 4-2.6s3.2.8 4 2.6"/></svg>KYC-verified users</span>
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>UPI · Cards · Bank payouts</span>
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Made for India</span>
-    </div>
-  </div>
-
-  <!-- What WorkMart is -->
-  <section>
-    <div class="wrap">
-      <span class="eyebrow">The idea</span>
-      <h2 class="section-title">A marketplace for everyday services</h2>
-      <p class="section-lead">Think of WorkMart like booking a cleaner, painter or mover: a customer hires a nearby professional for a specific task and pays for the completed service, with the money protected in escrow the whole way through. WorkMart simply connects the two and safeguards the payment — and <strong>right now the platform fee is ₹0</strong>, so customers pay only the service budget.</p>
-    </div>
-  </section>
-
-  <!-- Trust features -->
-  <section class="alt">
-    <div class="wrap">
-      <span class="eyebrow">Why WorkMart</span>
-      <h2 class="section-title">Built on trust</h2>
-      <p class="section-lead">Every part of WorkMart is designed to make booking and delivering a service feel safe for both sides.</p>
-      <div class="grid grid-4">
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9.3 12l2 2 3.4-3.8"/></svg></div><h3>Escrow payments</h3><p>Customers pay for the service into secure escrow up front. The professional sees the payment is real; it is released only when the customer confirms the work is done.</p></div>
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 17c.8-1.8 2.5-2.6 4-2.6s3.2.8 4 2.6"/><path d="M15 9.5h4M15 13h4"/></svg></div><h3>Verified identities</h3><p>Customers and professionals complete KYC verification, so you always know who you are dealing with.</p></div>
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="3.5"/><path d="M10.7 12.3L20 3"/><path d="M15.5 7.5l2.5 2.5M18 5l2 2"/></svg></div><h3>Start &amp; end codes</h3><p>A start code and a completion code confirm the professional was really there and the service was really finished.</p></div>
-        <div class="card"><div class="ico gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8L3.5 9.7l5.9-.9L12 3.5z"/></svg></div><h3>Ratings &amp; trust score</h3><p>Reviews and a live trust score help the best professionals and fairest customers rise to the top.</p></div>
-        <div class="card"><div class="ico gold"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="4"/><path d="M9.2 12.2L7 21l5-2.6L17 21l-2.2-8.8"/></svg></div><h3>Pro tiers &amp; past work</h3><p>Experienced professionals earn Gold, Silver and Bronze tiers, and showcase photos of finished work right on their applications.</p></div>
-        <div class="card"><div class="ico pink"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="4" rx="1"/><path d="M6 13v7h12v-7M12 9v11"/><path d="M12 9C8 9 6.5 7.5 6.5 5.5S9 4 9.5 5.5L12 9zM12 9c4 0 5.5-1.5 5.5-3.5S15 4 14.5 5.5L12 9z"/></svg></div><h3>Tips for great work</h3><p>Happy with the service? Send the professional a tip after payout — 100% of it reaches them.</p></div>
+    <!-- ── Proof strip ──────────────────────────────────────────────────── -->
+    <div class="strip" data-reveal>
+      <div class="wrap">
+        <ul>
+          <li><svg class="i"><use href="assets/icons.svg#i-shield-check"></use></svg>Escrow on every job</li>
+          <li><svg class="i"><use href="assets/icons.svg#i-id-card"></use></svg>KYC-verified users</li>
+          <li><svg class="i"><use href="assets/icons.svg#i-landmark"></use></svg>UPI · Cards · Netbanking</li>
+          <li><svg class="i"><use href="assets/icons.svg#i-map-pin"></use></svg>Made for India</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <!-- How it works -->
-  <section id="how">
-    <div class="wrap">
-      <span class="eyebrow">The process</span>
-      <h2 class="section-title">How it works</h2>
-      <p class="section-lead">A simple, protected flow from booking a service to completion.</p>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="step-num">1</div>
-          <h3>Request &amp; fund a service</h3>
-          <p>A customer describes the service they need — the task, date, time and budget — then pays the amount into escrow through our licensed payment partner. The money is held safely; it is not sent to anyone yet.</p>
+    <!-- ── How it works ─────────────────────────────────────────────────── -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2>From “I need help” to “done” in three steps.</h2>
+          <p>Simple for customers, fair for professionals, and protected at every step.</p>
+        </header>
+
+        <div class="steps">
+          <div class="steps-line" aria-hidden="true"><i></i></div>
+
+          <article class="step">
+            <div class="step-copy" data-reveal>
+              <span class="step-n">01</span>
+              <h3>Post your job for free</h3>
+              <p>Describe what you need, pick a day and time, and set your budget. Posting costs nothing — you only pay if you hire someone.</p>
+              <ul class="ticks">
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>100+ services across 15 categories</li>
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Add a photo so pros know what to expect</li>
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Verified professionals nearby get alerted</li>
+              </ul>
+            </div>
+            <div class="step-visual" data-reveal>
+              <div class="device sm">
+                <picture>
+                  <source srcset="assets/img/screen-details-dark.webp" media="(prefers-color-scheme: dark)" />
+                  <img src="assets/img/screen-details-light.webp" alt="WorkMart app: choosing the service, urgency and type of job" width="280" height="622" loading="lazy" />
+                </picture>
+              </div>
+            </div>
+          </article>
+
+          <article class="step flip">
+            <div class="step-copy" data-reveal>
+              <span class="step-n">02</span>
+              <h3>Hire, and fund escrow</h3>
+              <p>Verified professionals near you apply. Compare their trust score, tier and past work, pick the right person, and pay into escrow. The money is held safely by our payment partner — it isn’t sent to anyone yet.</p>
+              <ul class="ticks">
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Compare quotes side by side</li>
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Chat before you decide</li>
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Pay by UPI, card or netbanking</li>
+              </ul>
+            </div>
+            <div class="step-visual" data-reveal aria-hidden="true">
+              <div class="ui-stack">
+                <div class="ui-card picked">
+                  <span class="avatar">RK</span>
+                  <span class="who"><b>Ramesh K.</b>
+                    <span class="meta"><span class="tier gold"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg>Gold pro</span><span><svg class="i"><use href="assets/icons.svg#i-star"></use></svg>92 trust</span></span>
+                  </span>
+                  <span class="ask"><small>Quote</small><b>₹800</b></span>
+                </div>
+                <div class="ui-card dim">
+                  <span class="avatar alt">SP</span>
+                  <span class="who"><b>Suresh P.</b>
+                    <span class="meta"><span class="tier silver"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg>Silver pro</span><span><svg class="i"><use href="assets/icons.svg#i-star"></use></svg>84 trust</span></span>
+                  </span>
+                  <span class="ask"><small>Quote</small><b>₹850</b></span>
+                </div>
+                <div class="ui-card escrow">
+                  <span class="ico-round green"><svg class="i"><use href="assets/icons.svg#i-shield-check"></use></svg></span>
+                  <span><b>₹800 held in escrow</b><small>Released only when you confirm the work</small></span>
+                  <svg class="i lock"><use href="assets/icons.svg#i-lock"></use></svg>
+                </div>
+                <div class="ui-btn">Hire Ramesh · pay into escrow</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step-copy" data-reveal>
+              <span class="step-n">03</span>
+              <h3>Confirm, and the money is released</h3>
+              <p>The professional enters a start code when they arrive and gives you a completion code when they’re done. Confirm, and the payment goes to their bank. Then rate each other — and add a tip if you like.</p>
+              <ul class="ticks">
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Something wrong? Raise a dispute before confirming</li>
+                <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>100% of every tip reaches the professional</li>
+              </ul>
+            </div>
+            <div class="step-visual" data-reveal aria-hidden="true">
+              <div class="ui-stack">
+                <div class="ui-card code-card">
+                  <small>Completion code from Ramesh</small>
+                  <div class="code-boxes"><span>7</span><span>3</span><span>0</span><span>5</span></div>
+                </div>
+                <div class="ui-card released">
+                  <span class="tick"><svg class="i"><use href="assets/icons.svg#i-check"></use></svg></span>
+                  <span><b>Payment released</b><small>₹800 sent to Ramesh’s bank account</small></span>
+                </div>
+                <div class="ui-card">
+                  <span class="avatar">RK</span>
+                  <span class="who">
+                    <span class="stars"><svg class="i"><use href="assets/icons.svg#i-star"></use></svg><svg class="i"><use href="assets/icons.svg#i-star"></use></svg><svg class="i"><use href="assets/icons.svg#i-star"></use></svg><svg class="i"><use href="assets/icons.svg#i-star"></use></svg><svg class="i"><use href="assets/icons.svg#i-star"></use></svg></span>
+                    <span class="review-q">“Spotless kitchen, right on time.”</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="card">
-          <div class="step-num">2</div>
-          <h3>Get matched &amp; served</h3>
-          <p>Nearby verified professionals offer to help. The customer picks one. The professional arrives, enters the start code to begin, completes the service and submits photo proof of the finished work.</p>
+      </div>
+    </section>
+
+    <!-- ── Why WorkMart ─────────────────────────────────────────────────── -->
+    <section class="section soft" id="trust">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow">Why WorkMart</p>
+          <h2>Built on trust, for both sides.</h2>
+          <p>Every step is designed so customers can hire with confidence — and professionals always get paid for good work.</p>
+        </header>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f74ff" /><stop offset="1" stop-color="#16a34a" /></linearGradient></defs></svg>
+        <div class="bento">
+          <div class="tile wide navy" data-reveal>
+            <span class="t-ico"><svg class="i"><use href="assets/icons.svg#i-shield-check"></use></svg></span>
+            <h3>Escrow on every job</h3>
+            <p>You pay into escrow when you hire. Our payment partner holds the money, and it’s released only when you confirm the work is done.</p>
+            <div class="flow" aria-hidden="true">
+              <span class="flow-node"><svg class="i"><use href="assets/icons.svg#i-wallet"></use></svg>You pay</span>
+              <span class="flow-line"></span>
+              <span class="flow-node held"><svg class="i"><use href="assets/icons.svg#i-lock"></use></svg>Held safely</span>
+              <span class="flow-line"></span>
+              <span class="flow-node"><svg class="i"><use href="assets/icons.svg#i-hand-coins"></use></svg>Released to the pro</span>
+            </div>
+          </div>
+          <div class="tile" data-reveal>
+            <span class="t-ico"><svg class="i"><use href="assets/icons.svg#i-id-card"></use></svg></span>
+            <h3>Verified identities</h3>
+            <p>Everyone who posts or works completes KYC with an ID and a selfie, reviewed by our team.</p>
+            <div class="chips"><span class="chip">Aadhaar</span><span class="chip">PAN</span><span class="chip">Driving licence</span><span class="chip">Voter ID</span></div>
+          </div>
+          <div class="tile" data-reveal>
+            <span class="t-ico orange"><svg class="i"><use href="assets/icons.svg#i-key-round"></use></svg></span>
+            <h3>Start &amp; completion codes</h3>
+            <p>A start code proves the professional arrived; a completion code proves the job was finished — so payment only moves when the work really happened.</p>
+          </div>
+          <div class="tile" data-reveal>
+            <span class="t-ico green"><svg class="i"><use href="assets/icons.svg#i-thumbs-up"></use></svg></span>
+            <h3>Live trust score</h3>
+            <p>Every review feeds a trust score out of 100.</p>
+            <div class="ring-wrap">
+              <div class="ring"><svg viewBox="0 0 92 92"><circle class="track" cx="46" cy="46" r="38" /><circle class="arc" cx="46" cy="46" r="38" /></svg><b>92</b></div>
+              <small>Good work and fair customers rise to the top.</small>
+            </div>
+          </div>
+          <div class="tile" data-reveal>
+            <span class="t-ico gold"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg></span>
+            <h3>Pro tiers &amp; past work</h3>
+            <p>Experienced professionals earn tiers and show photos of finished work on every application.</p>
+            <div class="chips"><span class="chip gold"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg>Gold</span><span class="chip silver"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg>Silver</span><span class="chip bronze"><svg class="i"><use href="assets/icons.svg#i-award"></use></svg>Bronze</span></div>
+          </div>
+          <div class="tile" data-reveal>
+            <span class="t-ico pink"><svg class="i"><use href="assets/icons.svg#i-gift"></use></svg></span>
+            <h3>Tips go 100% to the pro</h3>
+            <p>Loved the work? Send a tip after the job is paid — every rupee reaches the professional.</p>
+          </div>
+          <div class="tile wide" data-reveal>
+            <span class="t-ico"><svg class="i"><use href="assets/icons.svg#i-scale"></use></svg></span>
+            <h3>Fair disputes</h3>
+            <p>If something goes wrong, raise a dispute before you confirm. Our team reviews the chat, photos, location and codes, then releases, refunds or splits the payment — fairly, for both sides.</p>
+          </div>
         </div>
-        <div class="card">
-          <div class="step-num">3</div>
-          <h3>Confirm &amp; release payment</h3>
-          <p>The customer verifies the completion code and confirms the service is done. WorkMart releases the escrowed amount to the professional. Both sides leave a review.</p>
+      </div>
+    </section>
+
+    <!-- ── Services ─────────────────────────────────────────────────────── -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="services-grid">
+          <div data-reveal>
+            <p class="eyebrow">Services</p>
+            <h2>100+ services.<br />One trusted app.</h2>
+            <p class="lead">From a deep clean to a house move, find skilled help for everyday work — every job with the same escrow protection.</p>
+            <div class="stat-row">
+              <div class="stat"><b>100+</b><span>services</span></div>
+              <div class="stat"><b>15</b><span>categories</span></div>
+              <div class="stat"><b>100%</b><span>of the budget to the pro</span></div>
+            </div>
+          </div>
+          <div class="step-visual" data-reveal>
+            <div class="device sm">
+              <picture>
+                <source srcset="assets/img/screen-services-dark.webp" media="(prefers-color-scheme: dark)" />
+                <img src="assets/img/screen-services-light.webp" alt="WorkMart app: choosing from home care services" width="280" height="622" loading="lazy" />
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="alt" id="services">
-    <div class="wrap">
-      <span class="eyebrow">What we cover</span>
-      <h2 class="section-title">Services for every need</h2>
-      <p class="section-lead">Book across the everyday services people rely on most.</p>
-      <div class="grid grid-4">
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l1.7 4.6 4.8 1.4-4.8 1.4L12 16l-1.7-4.6L5.5 10l4.8-1.4L12 4z"/><path d="M18.5 15.5l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"/></svg></div><h3>Cleaning</h3><p>Home, office and deep cleaning.</p></div>
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2z"/><path d="M14 10h4l4 4v2h-8"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></div><h3>House shifting</h3><p>Movers, loading and packing help.</p></div>
-        <div class="card"><div class="ico warm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="5" rx="1.5"/><path d="M18 6.5h2.5v4H12V13"/><path d="M12 13v7"/></svg></div><h3>Painting</h3><p>Walls, rooms and touch-ups.</p></div>
-        <div class="card"><div class="ico green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M14.8 5.2a4.2 4.2 0 0 0-5.7 5.3L4 15.6V20h4.4l5.1-5.1a4.2 4.2 0 0 0 5.3-5.7l-2.9 2.9-2.6-2.6 2.5-4.3z"/></svg></div><h3>Repairs &amp; more</h3><p>Plumbing, electrical, carpentry, gardening, deliveries and events.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing clarity (addresses "who pays") -->
-  <section id="fees">
-    <div class="wrap">
-      <span class="eyebrow">No surprises</span>
-      <h2 class="section-title">Simple, fair pricing</h2>
-      <p class="section-lead">Customers pay only for the service they book — and <strong>for a limited period, the platform fee is ₹0</strong>. Professionals join and offer their services for free and keep what they earn, plus any tips; WorkMart never charges a professional to sign up or to be matched.</p>
-      <div class="grid grid-3">
-        <div class="card"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 6.5c0-2-2.2-3-5-3s-5 1-5 3 2 2.6 5 3.2 5 1.4 5 3.3-2.2 3-5 3-5-1-5-3"/></svg></div><h3>Providers · ₹0 fee</h3><p>Pay only the service budget while the launch offer lasts. Shown exactly before you pay.</p></div>
-        <div class="card"><div class="ico green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Workers · always free</h3><p>No joining fee, no matching fee. You keep 100% of every budget you earn.</p></div>
-        <div class="card"><div class="ico pink"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="4" rx="1"/><path d="M6 13v7h12v-7M12 9v11"/></svg></div><h3>Tips · 100% yours</h3><p>Happy customers can tip after payout. Every rupee of it reaches the worker.</p></div>
-      </div>
-      <p class="section-lead" style="margin-top:22px;">All payments are processed by a licensed payment gateway and held in escrow until the service is complete. See full details on our <a href="pricing.html">pricing page</a>.</p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="alt" id="faq">
-    <div class="wrap">
-      <span class="eyebrow">Questions</span>
-      <h2 class="section-title">Frequently asked</h2>
-      <div class="faq">
-        <details>
-          <summary>Is my money safe?</summary>
-          <p>Yes. Your payment goes into secure escrow via Razorpay when you book — not to the worker. It is released only after you enter the worker's completion code and confirm the work. If the job doesn't happen, the money comes back to you. See our <a href="refunds.html">refund policy</a>.</p>
-        </details>
-        <details>
-          <summary>What does WorkMart cost?</summary>
-          <p>Browsing and joining are free, forever. Providers currently pay <strong>₹0 platform fee</strong> under our launch offer — only the service budget. Workers keep 100% of every budget plus 100% of tips. Full details on the <a href="pricing.html">pricing page</a>.</p>
-        </details>
-        <details>
-          <summary>Do I need KYC verification?</summary>
-          <p>Yes — to post jobs or earn money. Upload a document and a selfie in the app; review usually finishes within 24 hours. It is how both sides know the other person is real.</p>
-        </details>
-        <details>
-          <summary>How and when do workers get paid?</summary>
-          <p>When the provider confirms completion, earnings go to the worker's verified bank account (tips included). Bank verification takes 24–48 hours one time, at signup.</p>
-        </details>
-        <details>
-          <summary>What if something goes wrong?</summary>
-          <p>Raise a dispute in the app <strong>before</strong> confirming completion. Our team reviews the chat, photos, location and codes, and decides fairly — release, refund, or split. After confirmation, payments are final.</p>
-        </details>
-        <details>
-          <summary>Which cities does WorkMart serve?</summary>
-          <p>WorkMart works anywhere in India. Job density varies by area — turn on job alerts in the app and we'll notify you the moment work appears near you.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download -->
-  <section id="download">
-    <div class="wrap">
-      <div class="final-cta">
-        <h2>Get the WorkMart app</h2>
-        <p>Book a local service, or offer your skills near you, in minutes. Escrow-protected, KYC-verified, zero platform fee while the launch offer lasts.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://drive.google.com/uc?export=download&id=1qO738HMnzx20lGZyDd1x32ig0TzO4p0c">Download for Android</a>
-          <a class="btn btn-ghost" href="#how" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.3);color:#fff;">See how it works</a>
+      <div class="marquee" aria-label="Popular services">
+        <div class="marquee-row">
+          <span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-sparkles"></use></svg></span>House Cleaning</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-zap"></use></svg></span>Electrician</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-wrench"></use></svg></span>Plumbing</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-truck"></use></svg></span>House Shifting</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-paint-roller"></use></svg></span>Painting</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-hammer"></use></svg></span>Carpentry</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-air-vent"></use></svg></span>AC Service</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-sprout"></use></svg></span>Gardening</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-chef-hat"></use></svg></span>Home Cooking</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-spray-can"></use></svg></span>Deep Cleaning</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-droplets"></use></svg></span>Water Tank Cleaning</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-refrigerator"></use></svg></span>Fridge Repair</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-washing-machine"></use></svg></span>Washing Machine Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-sparkles"></use></svg></span>House Cleaning</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-zap"></use></svg></span>Electrician</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-wrench"></use></svg></span>Plumbing</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-truck"></use></svg></span>House Shifting</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-paint-roller"></use></svg></span>Painting</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-hammer"></use></svg></span>Carpentry</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-air-vent"></use></svg></span>AC Service</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-sprout"></use></svg></span>Gardening</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-chef-hat"></use></svg></span>Home Cooking</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-spray-can"></use></svg></span>Deep Cleaning</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-droplets"></use></svg></span>Water Tank Cleaning</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-refrigerator"></use></svg></span>Fridge Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-washing-machine"></use></svg></span>Washing Machine Repair</span>
         </div>
-        <small>Free to download · No joining fee · Cancel escrowed jobs for a full refund</small>
+        <div class="marquee-row rev">
+          <span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-baby"></use></svg></span>Child Care</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-heart-handshake"></use></svg></span>Elder Care</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-paw-print"></use></svg></span>Pet Care</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-scissors"></use></svg></span>Salon at Home</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-car-front"></use></svg></span>Car Wash</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-bike"></use></svg></span>Bike Repair</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-laptop"></use></svg></span>Computer Repair</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-smartphone"></use></svg></span>Mobile Repair</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-camera"></use></svg></span>Photography</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-package"></use></svg></span>Delivery</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-book-open"></use></svg></span>Home Tutor</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-shield"></use></svg></span>Security Guard</span><span class="svc"><span><svg class="i"><use href="assets/icons.svg#i-tv"></use></svg></span>TV Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-baby"></use></svg></span>Child Care</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-heart-handshake"></use></svg></span>Elder Care</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-paw-print"></use></svg></span>Pet Care</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-scissors"></use></svg></span>Salon at Home</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-car-front"></use></svg></span>Car Wash</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-bike"></use></svg></span>Bike Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-laptop"></use></svg></span>Computer Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-smartphone"></use></svg></span>Mobile Repair</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-camera"></use></svg></span>Photography</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-package"></use></svg></span>Delivery</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-book-open"></use></svg></span>Home Tutor</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-shield"></use></svg></span>Security Guard</span><span class="svc" aria-hidden="true"><span><svg class="i"><use href="assets/icons.svg#i-tv"></use></svg></span>TV Repair</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- ── For customers / for professionals ───────────────────────────── -->
+    <section class="section soft" id="who">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow">Made for both sides</p>
+          <h2>Hire with confidence. Earn with respect.</h2>
+        </header>
+        <div class="split">
+          <div class="aud" data-reveal>
+            <span class="tag"><svg class="i"><use href="assets/icons.svg#i-house"></use></svg>For customers</span>
+            <h3>Need something done?</h3>
+            <p>Reliable help for jobs big and small — without paying a stranger in advance.</p>
+            <ul class="ticks">
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Post a job free, in under two minutes</li>
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Choose from verified pros with real reviews</li>
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Pay into escrow — released only when you’re happy</li>
+            </ul>
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.workmart.app">Post a job <svg class="i"><use href="assets/icons.svg#i-arrow-right"></use></svg></a>
+          </div>
+          <div class="aud navy" data-reveal>
+            <span class="tag"><svg class="i"><use href="assets/icons.svg#i-briefcase"></use></svg>For professionals</span>
+            <h3>Turn your skills into income.</h3>
+            <p>Find paid work near you, get paid on time, and build a reputation that wins more jobs.</p>
+            <ul class="ticks">
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Free to join — keep 100% of the budget</li>
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Earnings paid straight to your bank</li>
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Job alerts for work near you</li>
+              <li><svg class="i"><use href="assets/icons.svg#i-circle-check"></use></svg>Grow your trust score and earn tiers</li>
+            </ul>
+            <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.workmart.app">Start earning <svg class="i"><use href="assets/icons.svg#i-arrow-right"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing ──────────────────────────────────────────────────────── -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple, fair, no surprises.</h2>
+          <p>Posting is always free. You only pay when you hire — and you always see the exact total first.</p>
+        </header>
+        <div class="price-grid">
+          <div class="price feature" data-reveal>
+            <span class="badge-offer"><svg class="i"><use href="assets/icons.svg#i-sparkles"></use></svg>Launch offer</span>
+            <div class="big">₹0 <small>platform fee</small></div>
+            <h3>For customers</h3>
+            <p>Pay only the job budget while the offer lasts. The exact total is shown in the app before you pay.</p>
+          </div>
+          <div class="price" data-reveal>
+            <span class="badge-offer" style="background:var(--tint);color:var(--blue)"><svg class="i"><use href="assets/icons.svg#i-briefcase"></use></svg>Always</span>
+            <div class="big">Free</div>
+            <h3>For professionals</h3>
+            <p>No joining fee and no matching fee. You keep 100% of every budget you earn.</p>
+          </div>
+          <div class="price" data-reveal>
+            <span class="badge-offer" style="background:rgba(219,39,119,.1);color:#db2777"><svg class="i"><use href="assets/icons.svg#i-gift"></use></svg>Tips</span>
+            <div class="big">100%</div>
+            <h3>Of every tip</h3>
+            <p>Tips go straight to the professional, with nothing taken out.</p>
+          </div>
+        </div>
+        <p class="price-note" data-reveal>Payments are processed by Razorpay, a licensed payment gateway. Full details on our <a href="pricing.html">pricing &amp; fees</a> page.</p>
+      </div>
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────────────────────────── -->
+    <section class="section soft" id="faq">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions, answered.</h2>
+        </header>
+        <div class="faq" data-reveal>
+          <details>
+            <summary>Is my money safe?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Yes. When you hire, you pay into escrow through Razorpay — the money doesn’t go to the professional yet. It’s released only after they give you the completion code and you confirm the work. If the job doesn’t happen, you’re refunded under our <a href="refunds.html">refund policy</a>.</div>
+          </details>
+          <details>
+            <summary>How much does WorkMart cost?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Posting a job is free, and right now the platform fee is ₹0 too — you pay only the job budget, and only when you hire. Professionals join free and keep 100% of the budget and tips. See <a href="pricing.html">pricing &amp; fees</a>.</div>
+          </details>
+          <details>
+            <summary>Do I need KYC verification?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Yes — to post jobs or to earn. Upload an ID document and a selfie in the app; our team usually reviews it within 24 hours. It’s how both sides know the other person is real.</div>
+          </details>
+          <details>
+            <summary>How do professionals get paid?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Once the customer confirms the work, the payment is released to the professional’s verified bank account, along with any tip. Bank details are verified once, when you set up payouts.</div>
+          </details>
+          <details>
+            <summary>What if something goes wrong?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Raise a dispute in the app <strong>before</strong> confirming the work. Our team reviews the chat, photos, location and codes, and decides fairly — release, refund or split. Once you confirm, the payment is final.</div>
+          </details>
+          <details>
+            <summary>Where is WorkMart available?<svg class="i"><use href="assets/icons.svg#i-plus"></use></svg></summary>
+            <div class="ans">Anywhere in India. How many jobs you’ll see depends on your area — turn on job alerts in the app and we’ll tell you the moment work is posted near you.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Get the app ──────────────────────────────────────────────────── -->
+    <section class="section" id="download" style="padding-bottom:0">
+      <div class="wrap">
+        <div class="final" data-reveal>
+          <div>
+            <h2>Get WorkMart on your phone.</h2>
+            <p>Post your first job free, or start earning near you today. Every job protected by escrow.</p>
+            <div class="cta-row">
+              <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.workmart.app"><img src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="180" height="54" /></a>
+              <a class="btn btn-glass" href="contact.html">Talk to us</a>
+            </div>
+          </div>
+          <div class="qr">
+            <img src="assets/img/qr-play.svg" alt="QR code to download WorkMart on Google Play" width="150" height="150" loading="lazy" />
+            <small>Scan to download</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE-FOOTER:START -->
+  <footer class="site">
     <div class="wrap">
-      <div class="col">
-        <div class="brand"><img class="emblem" src="assets/workmart-emblem.png" alt="" /><img class="wordmark" src="assets/workmart-wordmark.png" alt="WorkMart" /></div>
-        <p style="max-width:280px; margin-top:12px; font-size:14px;">Escrow-protected local services marketplace for India.</p>
+      <div class="foot">
+        <div>
+          <a class="brand" href="index.html" aria-label="WorkMart home">
+            <img class="emblem" src="assets/img/emblem.webp" alt="" width="36" height="36" />
+            <img class="wordmark wm-silver" src="assets/img/wordmark-silver.webp" alt="WorkMart" width="192" height="23" />
+          </a>
+          <p>The escrow-protected marketplace for local services in India.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#trust">Why WorkMart</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html">Pricing &amp; fees</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="refunds.html">Refund &amp; Cancellation</a>
+          <a href="delete-account.html">Delete Account &amp; Data</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact us</a>
+          <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a>
+          <a href="https://play.google.com/store/apps/details?id=com.workmart.app">Get the app</a>
+        </div>
       </div>
-      <div class="col">
-        <h4>Product</h4>
-        <a href="index.html#how">How it works</a>
-        <a href="index.html#services">Services</a>
-        <a href="pricing.html">Pricing &amp; fees</a>
-        <a href="#download">Download</a>
-      </div>
-      <div class="col">
-        <h4>Legal</h4>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="refunds.html">Refund &amp; Cancellation</a>
-        <a href="delete-account.html">Delete Account &amp; Data</a>
-      </div>
-      <div class="col">
-        <h4>Contact</h4>
-        <a href="contact.html">Contact us</a>
-        <a href="mailto:workmartjobs@gmail.com">workmartjobs@gmail.com</a>
+      <div class="legalline">
+        <p>© <span data-year>2026</span> WorkMart. All rights reserved. WorkMart is a technology platform that connects customers with independent local service professionals and facilitates escrow-protected payments between them. WorkMart is not the employer of any professional and does not itself provide the listed services.</p>
       </div>
     </div>
-    <div class="wrap"><div class="legalline">© 2026 WorkMart. All rights reserved. WorkMart is a technology platform that connects customers with independent local service professionals and facilitates escrow-protected payments between them. WorkMart is not the employer of any professional and does not itself provide the listed services.</div></div>
   </footer>
+  <!-- SITE-FOOTER:END -->
 </body>
 </html>
