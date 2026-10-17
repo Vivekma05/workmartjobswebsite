@@ -25,10 +25,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="assets/img/screen-review-light.webp" media="(prefers-color-scheme: light)" />
-  <link rel="preload" as="image" href="assets/img/screen-review-dark.webp" media="(prefers-color-scheme: dark)" />
   <link rel="stylesheet" href="styles.css" />
-  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(d){d.classList.add('js');var t;try{t=localStorage.getItem('wm-theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t)})(document.documentElement)</script>
+  <script>(function(l){l.rel='preload';l.as='image';l.href='assets/img/screen-review-'+document.documentElement.getAttribute('data-theme')+'.webp';document.head.appendChild(l)})(document.createElement('link'))</script>
   <script src="site.js" defer></script>
 </head>
 <body>
@@ -49,6 +48,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="nav-cta">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme"><svg class="i ic-moon"><use href="assets/icons.svg#i-moon"></use></svg><svg class="i ic-sun"><use href="assets/icons.svg#i-sun"></use></svg></button>
         <a class="btn btn-sm btn-light" href="https://play.google.com/store/apps/details?id=com.workmart.app">Get the app</a>
         <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><svg class="i"><use href="assets/icons.svg#i-menu"></use></svg></button>
       </div>
@@ -93,7 +93,7 @@
           <span class="hero-glow"></span>
           <div class="device" data-depth="1">
             <picture>
-              <source srcset="assets/img/screen-review-dark.webp" media="(prefers-color-scheme: dark)" />
+              <source srcset="assets/img/screen-review-dark.webp" media="(prefers-color-scheme: dark)" data-dark />
               <img src="assets/img/screen-review-light.webp" alt="" width="300" height="667" fetchpriority="high" />
             </picture>
           </div>
@@ -156,7 +156,7 @@
             <div class="step-visual" data-reveal>
               <div class="device sm">
                 <picture>
-                  <source srcset="assets/img/screen-details-dark.webp" media="(prefers-color-scheme: dark)" />
+                  <source srcset="assets/img/screen-details-dark.webp" media="(prefers-color-scheme: dark)" data-dark />
                   <img src="assets/img/screen-details-light.webp" alt="WorkMart app: choosing the service, urgency and type of job" width="280" height="622" loading="lazy" />
                 </picture>
               </div>
@@ -313,7 +313,7 @@
           <div class="step-visual" data-reveal>
             <div class="device sm">
               <picture>
-                <source srcset="assets/img/screen-services-dark.webp" media="(prefers-color-scheme: dark)" />
+                <source srcset="assets/img/screen-services-dark.webp" media="(prefers-color-scheme: dark)" data-dark />
                 <img src="assets/img/screen-services-light.webp" alt="WorkMart app: choosing from home care services" width="280" height="622" loading="lazy" />
               </picture>
             </div>
@@ -489,6 +489,11 @@
       </div>
       <div class="legalline">
         <p>© <span data-year>2026</span> WorkMart. All rights reserved. WorkMart is a technology platform that connects customers with independent local service professionals and facilitates escrow-protected payments between them. WorkMart is not the employer of any professional and does not itself provide the listed services.</p>
+        <div class="theme-pick" role="group" aria-label="Theme">
+          <button type="button" data-theme-set="system" aria-pressed="true"><svg class="i"><use href="assets/icons.svg#i-monitor"></use></svg>System</button>
+          <button type="button" data-theme-set="light" aria-pressed="false"><svg class="i"><use href="assets/icons.svg#i-sun"></use></svg>Light</button>
+          <button type="button" data-theme-set="dark" aria-pressed="false"><svg class="i"><use href="assets/icons.svg#i-moon"></use></svg>Dark</button>
+        </div>
       </div>
     </div>
   </footer>

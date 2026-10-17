@@ -1,7 +1,7 @@
 /* WorkMart website — progressive enhancement only. Everything is readable
-   without this file; with it: glass header on scroll, phone menu, scroll
-   reveals, hero tilt/parallax, the How-it-works progress line, a smooth FAQ
-   accordion, and the "On this page" sidebar on policy pages.
+   without this file; with it: glass header on scroll, light/dark switch,
+   phone menu, scroll reveals, hero tilt/parallax, the How-it-works progress
+   line, a smooth FAQ accordion, and the "On this page" sidebar on policy pages.
    Motion is skipped entirely under prefers-reduced-motion. */
 (function () {
   var doc = document.documentElement;
@@ -19,6 +19,95 @@
   }
   setSolid();
   window.addEventListener('scroll', setSolid, { passive: true });
+
+  /* ── Theme: the device setting by default. The header switch and the footer
+     picker save a choice; the change spreads as a circle from where it was
+     clicked. The <head> script has already set data-theme before first paint. ── */
+  var THEME_KEY = 'wm-theme';
+  var sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+  var darkSources = Array.prototype.slice.call(document.querySelectorAll('source[data-dark]'));
+  var themeBtn = document.querySelector('.theme-toggle');
+  var picks = Array.prototype.slice.call(document.querySelectorAll('[data-theme-set]'));
+  function savedTheme() {
+    try { var t = localStorage.getItem(THEME_KEY); return t === 'light' || t === 'dark' ? t : null; } catch (e) { return null; }
+  }
+  function storeTheme(pref) {
+    try { if (pref) localStorage.setItem(THEME_KEY, pref); else localStorage.removeItem(THEME_KEY); } catch (e) {}
+  }
+  function effective(pref) { return pref || (sysDark.matches ? 'dark' : 'light'); }
+  function paintTheme(pref) {
+    var t = effective(pref);
+    doc.setAttribute('data-theme', t);
+    // app screenshots follow the page theme, not only the device setting
+    darkSources.forEach(function (s) { s.media = t === 'dark' ? 'all' : 'not all'; });
+    if (themeBtn) {
+      var label = t === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+      themeBtn.setAttribute('aria-label', label);
+      themeBtn.title = label;
+    }
+    picks.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-theme-set') === (pref || 'system'))); });
+  }
+  function screenUrls(t) {
+    return darkSources.map(function (s) {
+      var img = s.parentNode.querySelector('img');
+      return t === 'dark' ? s.getAttribute('srcset') : img && img.getAttribute('src');
+    }).filter(Boolean);
+  }
+  var warmed = {};
+  function warm(t) {
+    if (warmed[t]) return;
+    warmed[t] = true;
+    screenUrls(t).forEach(function (u) { new Image().src = u; });
+  }
+  // Decode the other theme's screens first so the circle never reveals a stale image.
+  function screensReady(t) {
+    var jobs = screenUrls(t).map(function (u) {
+      var im = new Image(); im.src = u;
+      return im.decode ? im.decode().catch(function () {}) : Promise.resolve();
+    });
+    var cap = new Promise(function (res) { setTimeout(res, 600); });
+    return Promise.race([Promise.all(jobs), cap]);
+  }
+  function chooseTheme(pref, origin) {
+    var before = doc.getAttribute('data-theme');
+    var after = effective(pref);
+    storeTheme(pref);
+    if (after === before || reduce || !document.startViewTransition) { paintTheme(pref); return; }
+    screensReady(after).then(function () {
+      var r = origin && origin.getBoundingClientRect();
+      var x = r ? r.left + r.width / 2 : window.innerWidth / 2;
+      var y = r ? r.top + r.height / 2 : 0;
+      var R = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y));
+      var vt = document.startViewTransition(function () { paintTheme(pref); });
+      vt.ready.then(function () {
+        doc.animate(
+          { clipPath: ['circle(0px at ' + x + 'px ' + y + 'px)', 'circle(' + R + 'px at ' + x + 'px ' + y + 'px)'] },
+          { duration: 720, easing: 'cubic-bezier(.22,1,.36,1)', pseudoElement: '::view-transition-new(root)' }
+        );
+      });
+    });
+  }
+  paintTheme(savedTheme());
+  if (themeBtn) {
+    var warmOther = function () { warm(doc.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); };
+    themeBtn.addEventListener('pointerenter', warmOther);
+    themeBtn.addEventListener('focus', warmOther);
+    themeBtn.addEventListener('touchstart', warmOther, { passive: true });
+    themeBtn.addEventListener('click', function () {
+      var next = doc.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      // picking the device's own theme means "follow the device" again
+      chooseTheme(next === (sysDark.matches ? 'dark' : 'light') ? null : next, themeBtn);
+    });
+  }
+  picks.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.getAttribute('data-theme-set');
+      chooseTheme(v === 'system' ? null : v, b);
+    });
+  });
+  function onSystemTheme() { if (!savedTheme()) paintTheme(null); }
+  if (sysDark.addEventListener) sysDark.addEventListener('change', onSystemTheme);
+  else if (sysDark.addListener) sysDark.addListener(onSystemTheme);
 
   /* ── Phone menu ── */
   var toggle = document.querySelector('.nav-toggle');
