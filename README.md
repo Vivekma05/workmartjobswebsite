@@ -20,7 +20,7 @@ Search the `website/` files and update:
 1. **Registered address** — `contact.html` has a `[Your registered business address — India]` placeholder. Add your real address (Razorpay wants a contact address).
 2. **Registered entity name** — once your Pvt Ltd is incorporated, you may add "WorkMart is operated by <Company> Pvt Ltd" in the footer/terms. Optional for launch, but keep the site name consistent with what you submit to Razorpay.
 3. **Play Store link** — replace the "Download for Android" `href="#"` and "coming soon" note in `index.html` once the app is published.
-4. **Email** — the site and app use the official address **`workmartjobs@gmail.com`** for support, privacy and grievance. Make sure this inbox is monitored (Razorpay may email it).
+4. **Email** — the site and app use the official address **`support@workmartjobs.com`** for support, privacy and grievance. Make sure this inbox is monitored (Razorpay may email it).
 
 ## Deploy it free (pick one — ~5 minutes)
 
